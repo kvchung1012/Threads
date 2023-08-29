@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{6FB4977D-C371-40C3-98D1-11DD13C8410F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BE1B1FFD-9FB1-4E84-B0CF-CA5B49CC5509}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads.IdentityService", "Threads.IdentityService", "{B8DF20AA-C90B-48A4-A380-411432AB93BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{305B9541-27C7-4248-8E31-E2EFB278C6E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads.Services", "Threads.Services", "{37DD6486-A8D5-4EA2-9E97-EEAB90B43C4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads.Gateway", "Threads.Gateway", "{BE0E9D88-5434-42EC-9D77-DF6C4F0D8134}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.IdentityService.API", "src\Threads.Services\Thread.Identity\Threads.IdentityService.API\Threads.IdentityService.API.csproj", "{2FBDCA9C-9546-411F-AA79-095AD799B575}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.IdentityService.Application", "src\Threads.Services\Thread.Identity\Threads.IdentityService.Application\Threads.IdentityService.Application.csproj", "{261A4EB6-9CD4-4559-BC9C-878761A68DCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.IdentityService.Domain", "src\Threads.Services\Thread.Identity\Threads.IdentityService.Domain\Threads.IdentityService.Domain.csproj", "{05B61BC0-A60B-454A-84C3-CBAB4A208D2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads.IdentityService.Infrastructure", "src\Threads.Services\Thread.Identity\Threads.IdentityService.Infrastructure\Threads.IdentityService.Infrastructure.csproj", "{78EA8B3F-7152-40EB-A553-ABBA18B30CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads.BuildingBlock", "Threads.BuildingBlock", "{829E7D67-B0D6-42F2-AA64-63C818727220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.BuildingBlock.Application", "src\Threads.BuildingBlock\Threads.BuildingBlock.Application\Threads.BuildingBlock.Application.csproj", "{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.BuildingBlock.Domain", "src\Threads.BuildingBlock\Threads.BuildingBlock.Domain\Threads.BuildingBlock.Domain.csproj", "{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.BuildingBlock.Infrastructure", "src\Threads.BuildingBlock\Threads.BuildingBlock.Infrastructure\Threads.BuildingBlock.Infrastructure.csproj", "{71EB8AEF-9153-4617-A410-7AA94E6718B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads.Contract", "Threads.Contract", "{1CE40441-8E48-4BEB-93CE-678820A95CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread.Contract.IdentityService", "src\Threads.Contract\Thread.Contract.IdentityService\Thread.Contract.IdentityService.csproj", "{5C106C35-31F0-4170-82F0-0D7B8FEBD589}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FBDCA9C-9546-411F-AA79-095AD799B575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBDCA9C-9546-411F-AA79-095AD799B575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBDCA9C-9546-411F-AA79-095AD799B575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBDCA9C-9546-411F-AA79-095AD799B575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261A4EB6-9CD4-4559-BC9C-878761A68DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261A4EB6-9CD4-4559-BC9C-878761A68DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261A4EB6-9CD4-4559-BC9C-878761A68DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261A4EB6-9CD4-4559-BC9C-878761A68DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B61BC0-A60B-454A-84C3-CBAB4A208D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B61BC0-A60B-454A-84C3-CBAB4A208D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B61BC0-A60B-454A-84C3-CBAB4A208D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B61BC0-A60B-454A-84C3-CBAB4A208D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EA8B3F-7152-40EB-A553-ABBA18B30CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EA8B3F-7152-40EB-A553-ABBA18B30CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EA8B3F-7152-40EB-A553-ABBA18B30CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EA8B3F-7152-40EB-A553-ABBA18B30CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71EB8AEF-9153-4617-A410-7AA94E6718B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71EB8AEF-9153-4617-A410-7AA94E6718B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71EB8AEF-9153-4617-A410-7AA94E6718B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71EB8AEF-9153-4617-A410-7AA94E6718B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C106C35-31F0-4170-82F0-0D7B8FEBD589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C106C35-31F0-4170-82F0-0D7B8FEBD589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C106C35-31F0-4170-82F0-0D7B8FEBD589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C106C35-31F0-4170-82F0-0D7B8FEBD589}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8DF20AA-C90B-48A4-A380-411432AB93BA} = {37DD6486-A8D5-4EA2-9E97-EEAB90B43C4E}
+		{37DD6486-A8D5-4EA2-9E97-EEAB90B43C4E} = {BE1B1FFD-9FB1-4E84-B0CF-CA5B49CC5509}
+		{BE0E9D88-5434-42EC-9D77-DF6C4F0D8134} = {BE1B1FFD-9FB1-4E84-B0CF-CA5B49CC5509}
+		{2FBDCA9C-9546-411F-AA79-095AD799B575} = {B8DF20AA-C90B-48A4-A380-411432AB93BA}
+		{261A4EB6-9CD4-4559-BC9C-878761A68DCB} = {B8DF20AA-C90B-48A4-A380-411432AB93BA}
+		{05B61BC0-A60B-454A-84C3-CBAB4A208D2C} = {B8DF20AA-C90B-48A4-A380-411432AB93BA}
+		{78EA8B3F-7152-40EB-A553-ABBA18B30CD4} = {B8DF20AA-C90B-48A4-A380-411432AB93BA}
+		{829E7D67-B0D6-42F2-AA64-63C818727220} = {BE1B1FFD-9FB1-4E84-B0CF-CA5B49CC5509}
+		{1BFDC9DE-C5DF-4A3F-AA6F-FCCA4D33BED9} = {829E7D67-B0D6-42F2-AA64-63C818727220}
+		{C4B7A3EC-B1D0-47A9-B126-482921DAF4E8} = {829E7D67-B0D6-42F2-AA64-63C818727220}
+		{71EB8AEF-9153-4617-A410-7AA94E6718B0} = {829E7D67-B0D6-42F2-AA64-63C818727220}
+		{1CE40441-8E48-4BEB-93CE-678820A95CD4} = {BE1B1FFD-9FB1-4E84-B0CF-CA5B49CC5509}
+		{5C106C35-31F0-4170-82F0-0D7B8FEBD589} = {1CE40441-8E48-4BEB-93CE-678820A95CD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32175886-02C5-410D-97FB-CBAC2E6AAB47}
+	EndGlobalSection
+EndGlobal
