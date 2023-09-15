@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+using AutoMapper.QueryableExtensions;
 using Serilog;
-using System.Linq.Expressions;
 using Thread.Contract.IdentityService.Queries.RoleQueries.GetRoles;
 using Thread.Contract.IdentityService.Responses.Roles;
 using Threads.BuildingBlock.Application.Cqrs.EntityFramework.EfQuery;
+using Threads.BuildingBlock.Application.Cqrs.Queries.QueryFlow;
 using Threads.BuildingBlock.Application.Persistences;
 using Threads.IdentityService.Domain.Entities;
 namespace Threads.IdentityService.Application.Features.Roles.Queries.GetRoles
@@ -17,20 +17,11 @@ namespace Threads.IdentityService.Application.Features.Roles.Queries.GetRoles
 
         }
 
-        protected override Expression<Func<ApplicationRole, bool>> BuildFilterQuery(GetRolesQuery request)
-        {
-            Expression<Func<ApplicationRole, bool>> expression = request?.SearchKey switch
-            {
-                { } val => applicationRole => request.SearchKey.Contains(applicationRole.Name ?? ""),
-                _ => _ => true
-            };
-
-            return expression;
-        }
-
-        protected override Func<IQueryable<ApplicationRole>, IQueryable<ApplicationRole>> BuildSpecialAction()
-        {
-            return queryable => queryable.Include(x => x.RolePermissions);
-        }
+        protected override IQueryListFlowBuilder<ApplicationRole, ApplicationRoleResponse> BuildQueryFlow(IQueryListFlowBuilder<ApplicationRole, ApplicationRoleResponse> queryFlow, GetRolesQuery query)
+            => queryFlow
+                .ApplyFilter(x => x.Name.Contains(query.SearchKey ?? ""))
+                .ApplyOrderBy(x => x.OrderBy(x => x.NormalizedName))
+                .ApplySpecialActionModel(queryable
+                    => queryable.ProjectTo<ApplicationRoleResponse>(_mapper.ConfigurationProvider));
     }
 }

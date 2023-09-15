@@ -1,11 +1,9 @@
 ﻿namespace Threads.BuildingBlock.Application.Queries
 {
-    public class GetPaginationQuery
+    public class GetPaginationQuery : GetListQuery
     {
         public int? PageSize { get; set; }
         public int? PageIndex { get; set; }
-        public string? SortedFieldName { get; set; }
-        public SortedDirection? SortedDirection { get; set; }
 
         public int? GetSkip() => (PageIndex, PageSize) switch
         {
